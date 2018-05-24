@@ -3,34 +3,40 @@
 <head>
 <title>Hackday</title>
 <style type="text/css">
-	body {
+	/* body {
 		display: flex;
 		justify-content: center;
 		font-family: 'Roboto', sans-serif;
+	} */
+	body {
+		margin: 0;
 	}
 	section {
-		max-width: 480px;
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		font-size: 32px;
+		position: relative;
+		width: 712px;
+		width: 1280px;
+		overflow: hidden;
 	}
-	img {
+	.bg {
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 20px;
 	}
-	.logo {
-		font-size: 42px;
+	.overlay {
+		margin-left: auto;
+		left: 0;
+		position: absolute;
+		margin-right: auto;
+		width: 712px;
+		height: 1280px;
+		margin-top: 55px;
 	}
 </style>
 </head>
 <body>
 	<section>
-		<p>When you don't know who to back, you must whip it!</p>
-		<img src="https://fscl01.fonpit.de/userfiles/44704/image/Bilder/Samsung/Galaxy-Note/Bewegungen/galaxy-note-schuetteln.jpg" width="420" height="230" alt="">
-		<!-- Temporary, will be replaced with a logo of some sort -->
-		<div class="logo">WHIP IT GOOD!</div>
+		<img class="bg" src="./assets/bg.jpg"alt="">
+		<img class="overlay" src="./assets/home-overlay.png"alt="">
+		<div class="gif-circle"></div>
 	</section>
 </body>
 </html>
