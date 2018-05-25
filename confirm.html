@@ -56,9 +56,9 @@
 <body>
 	<main>
 		<section class="page-main">
-			<img class="page-main__primary" src="./assets/horses/horse1.png"/>
+			<img class="page-main__primary" id="horse" src="./assets/horses/horse1.png"/>
 			<div class="page-main__secondary">
-				<img class="page-main__name" src="./assets/names/name1.png"/>
+				<img class="page-main__name" id="name" src="./assets/names/name1.png"/>
 				<img class="page-main__odds" src="./assets/race-odds.png"/>
 			</div>
 		</section>
@@ -66,5 +66,19 @@
 			<img class="page-footer__primary" src="./assets/bet-confirmation.png"/>
 		</section>
 	</main>
+
+	<script>
+		function getParameterByName(name, url) {
+			if (!url) url = window.location.href;
+			name = name.replace(/[\[\]]/g, "\\$&");
+			var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+					results = regex.exec(url);
+			if (!results) return 1;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+		document.getElementById('horse').src = './assets/horses/horse' + getParameterByName('horse') + '.png';
+		document.getElementById('name').src = './assets/names/name' + getParameterByName('horse') + '.png'; 
+	</script>
 </body>
 </html>
