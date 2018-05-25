@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bet has been placed!!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body {
+			background: white url(./img/bg.jpg) no-repeat center;
+			background-size: cover;
+			margin: 0
+		}
+
+		main {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: space-between;
+		}
+
+		.page-main__primary {
+			width: 250px;
+			margin-top: 30px;
+		}
+
+		
+		.page-main__secondary {
+			margin-top: -10px;
+		}
+
+		.page-main__secondary img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.page-main__name {
+			width: 220px;
+		}
+
+		.page-main__odds {
+			width: 150px;
+			margin-top: 20px;
+		}
+
+		.page-footer__primary {
+			display: block;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+	</style>
+</head>
+<body>
+	<main>
+		<section class="page-main">
+			<img class="page-main__primary" src="./img/horses/horse1.png"/>
+			<div class="page-main__secondary">
+				<img class="page-main__name" src="./img/names/name1.png"/>
+				<img class="page-main__odds" src="./img/race-odds.png"/>
+			</div>
+		</section>
+		<section class="page-footer">
+			<img class="page-footer__primary" src="./img/bet-confirmation.png"/>
+		</section>
+	</main>
+</body>
+</html>
